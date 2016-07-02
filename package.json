@@ -1,0 +1,13 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "description": "Centralised database for employee details ",
+  "main": "js/server.js",
+  "scripts": {
+    "start": "node server"
+  },
+  "author": "xxx",
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
