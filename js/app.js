@@ -60,10 +60,9 @@ $(document).ready(function () {
         $('a[data-toggle="'+tog+'"][data-title="'+sel+'"]').removeClass('notActive').addClass('active');
     });
 
-    $(function () {
-        $('#datetimepicker1').datepicker({});
+    $('.input-append.date').datepicker({
+        autoclose: true,
+        clearBtn: true,
     });
-
-    
     
 });

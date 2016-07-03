@@ -8,6 +8,9 @@
   },
   "author": "xxx",
   "dependencies": {
-    "bootstrap": "^3.3.6"
+    "jquery": ">=1.9.0",
+    "bootstrap": "^3.3.6",
+    "bootstrap-datepicker": "git@github.com:eternicode/bootstrap-datepicker.git",
+    "bootstrap-fileinput": "git@github.com:kartik-v/bootstrap-fileinput.git"
   }
 }
