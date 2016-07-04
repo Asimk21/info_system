@@ -37,9 +37,6 @@
             <div class="row setup-content" id="step-1">
                 <div class="col-xs-12">
                     <h3>Personal details</h3>
-                    <!--<div class="col-xs-6">-->
-
-                        <!--<h3>Passport details</h3>-->
                         <div class="col-xs-6">
                             <div class="form-group">
                                 <label class="control-label">MID</label>
@@ -51,30 +48,22 @@
                                 <input id="surName" maxlength="25" type="text" required="required" class="form-control" placeholder="Enter Surname" tabindex="3"/>
                             </div>
 
-                            <div class="form-group">
-                                <label class="control-label">Place of Birth</label>
-                                <input  maxlength="8" type="text" required="required" class="form-control" placeholder="Enter Place of Birth" tabindex="5"/>
-                            </div>
-
+                            <!--Make DOB as mandatory field-->
                             <label class="control-label">Date of Birth</label>
-                             <div id="dob" class="input-append date" tabindex="7">
-                                <input class="form-control">
+                             <div id="dob" class="input-append date">
+                                <input class="form-control" placeholder="Enter DOB" tabindex="5">
                                 <span class="add-on">
                                     <i class="icon-th"></i>
                                 </span>
                             </div>
 
-                            <label class="control-label">Valid Until</label>
-                            <div id="pValidUntil" class="input-append date" tabindex="9">
-                                <input class="form-control">
-                                <span class="add-on">
-                                    <i class="icon-th"></i>
-                                </span>
+                            <div class="form-group">
+                                <label class="control-label">Nationality</label>
+                                <input maxlength="25" type="text" required="required" class="form-control" placeholder="Enter Nationality" tabindex="7"/>
                             </div>
                         </div>
 
                         <div class="col-xs-6">
-
                             <div class="form-group">
                                 <label class="control-label">Gender</label>
                                 <div id="radioBtn" tabindex="2">
@@ -90,13 +79,26 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="control-label">Nationality</label>
-                                <input maxlength="25" type="text" required="required" class="form-control" placeholder="Enter Nationality" tabindex="6"/>
+                                <label class="control-label">Place of Birth</label>
+                                <input  maxlength="25" type="text" required="required" class="form-control" placeholder="Enter Place of Birth" tabindex="6"/>
                             </div>
 
+                       </div>
+                </div>
+                <button id="next" type="button" class="btn btn-primary nextBtn btn-md pull-right" tabindex="8">Next</button>
+            </div>
+
+           <div class="row setup-content" id="step-2">
+                    <div class="col-xs-12">
+                        <h3>Passport details</h3>
+                        <div class="col-xs-6">
+                            <label class="control-label">Passport No</label>
+                            <input  maxlength="25" type="text" required="required" class="form-control" placeholder="Enter Passport number" tabindex="1"/>
+
+                            <!--Make Date as mandatory field-->
                             <label class="control-label">Valid From</label>
-                            <div id="pValidFrom" class="input-append date" tabindex="8">
-                                <input class="form-control">
+                            <div id="pValidFrom" class="input-append date">
+                                <input class="form-control" placeholder="Enter Passport validity start date" tabindex="3">
                                 <span class="add-on">
                                     <i class="icon-th"></i>
                                 </span>
@@ -104,74 +106,85 @@
 
                             <div>
                                 <label class="control-label">Upload Passport copy</label>
-                                <input id="uPassport" type="file" class="file" data-allowed-file-extensions='["pdf"]' tabindex="10">
+                                <input id="uPassport" type="file" class="file" data-allowed-file-extensions='["pdf"]' tabindex="5">
                             </div>
+                        </div>
 
-                            <nav>
-                              <ul class="pager">
-                                <li>
-                                     <button id="next" type="button" class="btn btn-primary nextBtn btn-md pull-right" tabindex="11">Next</button>
-                                </li>
-                              </ul>
-                            </nav>
+                        <div class="col-xs-6">
+                            <label class="control-label">Place of Issue</label>
+                            <input  maxlength="25" type="text" required="required" class="form-control" placeholder="Enter place of issue" tabindex="2"/>
 
-                       </div>
+                            <!--Make Date as mandatory field-->
+                            <label class="control-label">Valid Until</label>
+                            <div id="pValidUntil" class="input-append date">
+                                <input class="form-control" placeholder="Enter Passport validity end date" tabindex="4">
+                                <span class="add-on">
+                                    <i class="icon-th"></i>
+                                </span>
+                            </div>
+                        </div>
 
-
-                   </div>
-               </div>
-           </div>
-
-           <div class="row setup-content" id="step-2">
-                <button type="link" class="btn btn-primary prevBtn btn-md pull-left" tabindex="1">Back</button>
-                    <div class="col-xs-12">
-                        <h3>Visa details</h3>
-
-                        <div class="col-md-12">
+                        <div class="col-xs-12">
+                            <h3>Visa details</h3>
                             <div class="col-xs-6">
 
+                                <div class="form-group" >
                                 <label class="control-label">Visa Type</label>
-                                <select id="vType" class="form-control" tabindex="2">
+                                <select id="vType" class="form-control" tabindex="6">
                                     <option value="one">Short Term</option>
                                     <option value="two">Long Term 3 Years</option>
                                     <option value="three">Extended Long Term 5 Yrs</option>
                                 </select>
+                                </div>
 
-                                <label class="control-label" >Valid From</label>
+                                <!--Make Date as mandatory field-->
+                                <div class="form-group" >
+                                <label class="control-label">Valid From</label>
                                 <div id="vValidFrom" class="input-append date" >
-                                    <input class="form-control" tabindex="4"/>
+                                    <input class="form-control" placeholder="Enter VISA validity start date" tabindex="8"/>
                                     <span class="add-on">
                                         <i class="icon-th"></i>
                                     </span>
                                 </div>
-
-                                <label id="vPlaceOfIssue" class="control-label">Place of Issue</label>
-                                <div class="form-group" >
-                                    <input maxlength="25" type="text" required="required" class="form-control" placeholder="Enter Visa Place of Issue" tabindex="6"/>
                                 </div>
 
+                                <div class="form-group" >
+                                <label id="vPlaceOfIssue" class="control-label">Place of Issue</label>
+                                <div class="form-group" >
+                                    <input maxlength="25" type="text" required="required" class="form-control" placeholder="Enter Visa Place of Issue" tabindex="10"/>
+                                </div>
+                                </div>
                             </div>
 
                             <div class="col-xs-6">
+                                <div class="form-group" >
                                 <label id="cos" class="control-label">Cos ID</label>
                                 <div class="form-group" >
-                                    <input maxlength="25"  type="text" required="required" class="form-control" placeholder="Enter COS ID" tabindex="3"/>
+                                    <input maxlength="25"  type="text" required="required" class="form-control" placeholder="Enter COS ID" tabindex="7"/>
+                                </div>
                                 </div>
 
+                                <!--Make Date as mandatory field-->
+                                <div class="form-group" >
                                 <label class="control-label">Valid Until</label>
-                                <div id="vValidUntil" class="input-append date" tabindex="5">
-                                    <input class="form-control">
+                                <div id="vValidUntil" class="input-append date" >
+                                    <input class="form-control" placeholder="Enter VISA validity end date" tabindex="9">
                                     <span class="add-on">
                                         <i class="icon-th"></i>
                                     </span>
                                 </div>
+                                </div>
 
+                                <div class="form-group" >
                                 <div>
                                     <label class="control-label">Upload Visa</label>
-                                    <input id="uVisa" type="file" class="file" data-allowed-file-extensions='["pdf"]' tabindex="7">
+                                    <input id="uVisa" type="file" class="file" data-allowed-file-extensions='["pdf"]' tabindex="11">
+                                </div>
                                 </div>
                             </div>
-                            <button id="submit" onclick="user.getMid()" type="submit" class="btn btn-primary center-block">Submit</button>
+                            <button type="link" class="btn btn-primary prevBtn btn-md pull-left" tabindex="12">Back</button>
+                            <button id="submit" onclick="user.getMid()" type="submit" class="btn btn-primary pull-right" tabindex="13">Submit</button>
+                            <button id="cancel" onclick="user.getMid()" type="submit" class="btn btn-default pull-right" tabindex="14">Cancel</button>
                     </div>
                 </div>
             </div>
