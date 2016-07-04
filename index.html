@@ -36,24 +36,15 @@
        <form role="form">
             <div class="row setup-content" id="step-1">
                 <div class="col-xs-12">
-                    <h3>Mindtree details</h3>
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label class="control-label">MID</label>
-                            <input id="mid" maxlength="8" type="text" required="required" class="form-control" placeholder="Enter Mindtree ID" tabindex="1"/>
-                        </div>
+                    <h3>Personal details</h3>
+                    <!--<div class="col-xs-6">-->
 
-                        <div class="input-group">
-                            <label class="control-label">Gender</label>
-                            <div id="radioBtn" class="btn-group" tabindex="2">
-                                <a class="btn btn-primary btn-sm active" data-toggle="fun" data-title="Y">M</a>
-                                <a class="btn btn-primary btn-sm notActive" data-toggle="fun" data-title="X">F</a>
-                                <a class="btn btn-primary btn-sm notActive" data-toggle="fun" data-title="N">E</a>
-                            </div>
-                        </div>
-
-                        <h3>Passport details</h3>
+                        <!--<h3>Passport details</h3>-->
                         <div class="col-xs-6">
+                            <div class="form-group">
+                                <label class="control-label">MID</label>
+                                <input id="mid" maxlength="8" type="text" required="required" class="form-control" placeholder="Enter Mindtree ID" tabindex="1"/>
+                            </div>
 
                             <div class="form-group">
                                 <label class="control-label">Surname</label>
@@ -85,13 +76,22 @@
                         <div class="col-xs-6">
 
                             <div class="form-group">
+                                <label class="control-label">Gender</label>
+                                <div id="radioBtn" tabindex="2">
+                                    <a class="btn btn-primary btn-md active" data-toggle="fun" data-title="Y">M</a>
+                                    <a class="btn btn-primary btn-md notActive" data-toggle="fun" data-title="X">F</a>
+                                    <a class="btn btn-primary btn-md notActive" data-toggle="fun" data-title="N">E</a>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
                                 <label class="control-label">Given Name</label>
                                 <input id="givenName" maxlength="25" type="text" required="required" class="form-control" placeholder="Enter given Name" tabindex="4"/>
                             </div>
 
                             <div class="form-group">
                                 <label class="control-label">Nationality</label>
-                                <input  maxlength="8" type="text" required="required" class="form-control" placeholder="Enter Nationality" tabindex="6"/>
+                                <input maxlength="25" type="text" required="required" class="form-control" placeholder="Enter Nationality" tabindex="6"/>
                             </div>
 
                             <label class="control-label">Valid From</label>
@@ -103,7 +103,7 @@
                             </div>
 
                             <div>
-                                <label class="control-label">Upload Passport</label>
+                                <label class="control-label">Upload Passport copy</label>
                                 <input id="uPassport" type="file" class="file" data-allowed-file-extensions='["pdf"]' tabindex="10">
                             </div>
 
