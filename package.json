@@ -1,16 +1,16 @@
 {
-  "name": "examples",
+  "name": "VisaInfoSystem",
   "version": "1.0.0",
-  "description": "Centralised database for employee details ",
+  "description": "Centralised system for employee passport and visa ",
   "main": "js/server.js",
   "scripts": {
     "start": "node server"
   },
-  "author": "xxx",
+  "author": "Team",
   "dependencies": {
-    "jquery": ">=1.9.0",
     "bootstrap": "^3.3.6",
-    "bootstrap-datepicker": "git@github.com:eternicode/bootstrap-datepicker.git",
-    "bootstrap-fileinput": "git@github.com:kartik-v/bootstrap-fileinput.git"
+    "bootstrap-datepicker": "^1.6.1",
+    "bootstrap-fileinput": "^4.2.8",
+    "jquery": ">=1.9.0"
   }
 }
