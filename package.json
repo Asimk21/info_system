@@ -1,0 +1,16 @@
+{
+  "name": "VisaInfoSystem",
+  "version": "1.0.0",
+  "description": "Centralised system for employee passport and visa ",
+  "main": "js/server.js",
+  "scripts": {
+    "start": "node server"
+  },
+  "author": "Team",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "bootstrap-datepicker": "^1.6.1",
+    "bootstrap-fileinput": "^4.2.8",
+    "jquery": ">=1.9.0"
+  }
+}
