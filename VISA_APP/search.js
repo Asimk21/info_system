@@ -1,33 +1,3 @@
-/*var fs = require('fs');
-var obj;
-var JsonDB = require('node-json-db');
-var db = new JsonDB("myDataBase", true, true);
-fs.readFile('validation.json', 'utf8', function (err, data) {
-  if (err) throw err;
-  obj = JSON.parse(data);
-  var okeys = Object.keys(obj);
-  var value1 = okeys[0];
-  okeys.forEach (function (e){
-  	obj[e].passport.validity.forEach(function(f){
-  		f.Visa.forEach(function(v){
-  			if(v.Type == "SHORT" && v.ValidUntil == "01/01/2018")
-  			{
-          fs.writeFileSync('test.json', JSON.stringify(obj, null, 2));
-  			}
-  		})
-  	})
-});
-
-
-
-fs.appendFileSync('myDataBase.json', JSON.stringify(obj, null, 2));
-//db.delete("/M1021927");
-db.reload();
-var data2 = db.getData("/");
-console.log(data2);
-});*/
-
-
 var express = require("express");
 var bodyParser = require("body-parser");
 var fs = require('fs');
