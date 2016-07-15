@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Search</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel=stylesheet href="/css/bootstrap.css">
+    <link rel=stylesheet href="/css/bootstrap.min.css">
+    <link rel=stylesheet href="/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+    <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="ser.js"></script>
+<!--     // <script src="/js/npm.js"></script> -->
+</head>
+<body>
+<div class="row">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group col-xs-8 col-xs-offset-3">
+              <input type="search" id="search1" class="form-control" placeholder="Search" aria-controls="myTable">
+              <button id="search" name="search" type="button" class="btn btn-warning btn-lg">Go</button>
+          </div>
+          <div class="form-group col-xs-12 col-xs-offset-3">
+              <textarea class="form-control col-xs-12" rows="7" placeholder="Enter Json" aria-controls="myTable" id="json_area"></textarea>
+              <button id="json" name="json" type="button" class="btn btn-warning btn-lg">Submit</button>
+          </div>          
+        </form>
+    </div>
+  </nav>
+<div id="tablearea" class="container">
+  <table id='myTable' class='table table-responsive'>
+    <thead>
+      <tr class='warning'><th>Type</th><th>Valid From</th><th>Valid Until</th><th>COS ID</th><th>Place of Issue</th><th>Date of Issue</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+    </table>
+</div>
+
+
+</div> 
+
+</body>
+</html>
